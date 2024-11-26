@@ -1,8 +1,8 @@
 <?php
-$servername = "sql212.infinityfree.com"; 
-$username = "if0_37772778";        
-$password = "AFrLboEKG1y0Zhc";    
-$database = "if0_37772778_lottery"; 
+$servername = "localhost"; 
+$username = "root";        
+$password = "";    
+$database = "lottery_v2"; 
 
 $conn = new mysqli($servername, $username, $password, $database);
 

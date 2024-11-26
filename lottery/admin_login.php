@@ -32,14 +32,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Logowanie administratora</title>
 </head>
 <body>
-    <h1>Logowanie administratora</h1>
     <?php if (!empty($error_message)) echo "<p style='color:red;'>$error_message</p>"; ?>
     <form method="post" action="admin_login.php">
-        <label for="username">Nazwa użytkownika:</label>
+        <label for="username">user:</label>
         <input type="text" id="username" name="username" required>
-        <label for="password">Hasło:</label>
+        <label for="password">password:</label>
         <input type="password" id="password" name="password" required>
-        <button type="submit">Zaloguj się</button>
+        <button type="submit">Log In</button>
     </form>
     <button style="margin-top: 50px;"onclick="window.location.href='index.php'">Powrót na główną</button>
 

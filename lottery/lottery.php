@@ -18,7 +18,14 @@ function getUserIP() {
     }
 }
 
-$allowed_domains = ['gmail.com', 'googlemail.com', 'wp.pl', 'interia.pl', 'o2.pl', 'onet.pl', 'yahoo.com'];
+$allowed_domains = [
+    'gmail.com', 'googlemail.com', 'yahoo.com', 'outlook.com', 'hotmail.com', 'live.com', 'icloud.com', 'protonmail.com', 'zoho.com', 
+    'aol.com', 'yandex.com', 'mail.ru', 'wp.pl', 'interia.pl', 'o2.pl', 'onet.pl', 'tlen.pl', 'gazeta.pl', 'poczta.onet.pl', 'autograf.pl', 
+    'buziaczek.pl', 'gmx.de', 'web.de', 'freenet.de', 't-online.de', 'orange.fr', 'sfr.fr', 'free.fr', 'laposte.net', 'btinternet.com', 
+    'sky.com', 'talktalk.net', 'virginmedia.com', 'seznam.cz', 'post.cz', 'centrum.cz', 'zoznam.sk', 'bk.ru', 'inbox.ru', 'list.ru', 
+    'hotmail.se', 'spray.se', 'live.dk', 'mail.dk', 'europe.com', 'posteo.de', 'hushmail.com'
+];
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['email']) && isset($_POST['favorite_number']) && isset($_POST['captcha'])) {
@@ -83,6 +90,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-$conn->close();
+// $conn->close();
 
 ?>
